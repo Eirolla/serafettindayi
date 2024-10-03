@@ -362,7 +362,7 @@ var app = new Vue({
     },
     created() {
         this.loading = true;
-        axios.get('https://cdn.frogmedia.me/database/nahalirsin.json').then((response) => {
+        axios.get('https://cdn.frogmedia.me/database/serafettindayi.json').then((response) => {
                 this.client = response.data.html;
                 console.log("Categories:", this.client.categories); // Kategorileri kontrol et
                 // Diğer atamalar...
