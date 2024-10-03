@@ -55,7 +55,6 @@
             background-size: cover; 
             overflow-x: hidden;}
     header{
-        background: linear-gradient(180deg, rgba(29,3,61,1) 0%, rgba(88,9,185,1) 78%, rgba(104,49,171,1) 100%);
     
         overflow-x: hidden;
     }
@@ -126,7 +125,7 @@
                 <div class="ticker">
                     <div class="ticker__item">
                     <a v-if="_.find(client.sites, ['site', site.site])" v-for="(site,siteKey) in _.orderBy(strip.sites, [item => parseInt(item.sort)], ['asc'])" :href="_.find(client.sites, ['site', site.site]).url" class="item" :style="'--site-color: ' + _.find(client.sites, ['site', site.site]).color">
-                        <img :src="_.find(client.sites, ['site', site.site]).strip_img ? client.cdn_url  + /logo/ + _.find(client.sites, ['site', site.site]).strip_img :client.cdn_url  + /logo/ +  _.find(client.sites, ['site', site.site]).sitepic" width="150">
+                        <img :src="client.cdn_url  + /logo/ +  _.find(client.sites, ['site', site.site]).sitepic" width="150">
                         <div class="button">GİRİŞ YAP</div>
                     </a>
                 </div>
@@ -332,7 +331,7 @@
             <div class="footer-c"><div class="licence">
                 ŞerafettinDayı tüm hakları saklıdır.
                 </div> <a target="_blank" href="https://web.skype.com/8:live:.cid.451f05a43048a700" class="cpyrght">
-                This App Provided By <img :src="client.cdn_url + '/logo/' + 'frogmedia.png'" style="filter: invert(100%)"></a></div>
+                This App Provided By <img :src="client.cdn_url + '/logo/' + 'frogmedia.png'"></a></div>
         <div class="overlay" v-show="!_.isEmpty(notifyFix.sites)" v-if="notifyShow"></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
