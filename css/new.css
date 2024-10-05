@@ -1,9 +1,9 @@
 body{
     margin: 0px;
-    --bg: #061c33;
-    --menu: #7d2792;
-    --card: #120c14d0;
-    --card2: #120c14d8;
+    --bg: #1d033d;
+    --menu: #0d0439;
+    --card: #250505ce;
+    --card2: #3b0303d8;
     height: 100%;
     width: 100%;
     left: 0px;
@@ -633,6 +633,23 @@ header .links a svg{
   
   
   
+  .diamond .item {
+    border: 4px solid var(--site-color);
+    box-shadow: 0 0 10px var(--site-color), 0 0 20px var(--site-color); /* Glow effect */
+}
+.vip.king .item {
+  border: 4px solid var(--site-color);
+  box-shadow: 0 0 10px var(--site-color), 0 0 20px var(--site-color); /* Glow effect */
+}
+.vip .item {
+  border: 4px solid var(--site-color);
+  box-shadow: 0 0 10px var(--site-color), 0 0 20px var(--site-color); /* Glow effect */
+}
+.normal .item {
+  border: 4px solid var(--site-color);
+  box-shadow: 0 0 10px var(--site-color), 0 0 20px var(--site-color); /* Glow effect */
+
+}
   
   
   .notify-fixed{
